@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rakhat | ADS-LAB3</title>
+    <meta name="robots" content="index, follow" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/png" href="https://www.robinremsa.com/wp-content/uploads/2019/04/cropped-R-favicon.png" />
+
+    <link rel="stylesheet" href="assets/css/vendor/Pe-icon-7-stroke.css" />	
+    <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="main-wrapper">  
+        <main class="main-content">
+            <div class="breadcrumb-area breadcrumb-height" data-bg-image="assets/images/me.jpg">
+                <div class="container h-100">
+                    <div class="row h-100">
+                        <div class="col-lg-12">
+                            <div class="breadcrumb-item text-night-rider">
+                                <h2 class="breadcrumb-heading">Lab 3</h2>
+								<h6>Abdimanat Rakhat | CS-2009</h6>
+                                <ul>
+                                    <li>
+                                        <a href="https://imrakhat.tech">Home /</a>
+                                    </li>
+                                    <li>ADS-LAB3</li>
+                                </ul>
+								
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
+            <div class="faq-area section-space-y-axis-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="frequently-area">
+                                <h2 class="heading mb-0">Lab works</h2>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="frequently-item">
+                                                    <ul>
+                                                        <li class="has-sub active">
+                                                            <a href="javascript:void(0)">1 task
+                                                                <i class="pe-7s-angle-down"></i>
+                                                            </a>
+                                                            <ul class="frequently-body">
+                                                                <li>               
+import java.util.Scanner;<br>
+
+public class Task1 {<br>
+	public static void main(String[] args) {<br>
+		Scanner scanner = new Scanner(System.in);<br>
+		int n = scanner.nextInt();<br>
+		int[] arr = new int[n];<br>
+		for(int i = 0; i < n; i++) {<br>
+			arr[i] = scanner.nextInt();<br>
+		}<br>
+		
+		for(int i = 0; i < n - 1; i++) {<br>
+			for(int j = 0; j < n - i - 1; j++) {<br>
+				if(arr[j] > arr[j+1]) {<br>
+					int temp = arr[j];<br>
+					arr[j] = arr[j+1];<br>
+					arr[j+1] = temp;<br>
+				}<br>
+			}<br>
+		}<br>
+		for(int i = 0; i < n; i++) {<br>
+			System.out.print(arr[i] + " ");<br>
+		}<br>
+	}<br>
+}<br>
+<img src="https://i.ibb.co/dQXWbHn/image.png">
+
+                                                                </li>																
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="javascript:void(0)">2 task
+                                                                <i class="pe-7s-angle-down"></i>
+                                                            </a>
+                                                            <ul class="frequently-body">
+                                                                <li>
+public class Task1 {<br>
+    public void buildHeap(int arr[])<br>
+    {<br>
+        int n = arr.length;<br>
+
+        for (int i = n / 2 - 1; i >= 0; i--)<br>
+            heapify(arr, n, i);<br>
+
+        for (int i = n - 1; i > 0; i--) {<br>
+
+            int temp = arr[0];<br>
+            arr[0] = arr[i];<br>
+            arr[i] = temp;<br>
+
+            heapify(arr, i, 0);<br>
+        }<br>
+    }<br>
+
+    void heapify(int arr[], int n, int i)<br>
+    {<br>
+        int largest = i; // Initialize largest as root<br>
+        int l = 2 * i + 1; // left = 2*i + 1<br>
+        int r = 2 * i + 2; // right = 2*i + 2<br>
+
+        if (l < n && arr[l] > arr[largest])<br>
+            largest = l;<br>
+
+        if (r < n && arr[r] > arr[largest])<br>
+            largest = r;<br>
+
+        if (largest != i) {<br>
+            int swap = arr[i];<br>
+            arr[i] = arr[largest];<br>
+            arr[largest] = swap;<br>
+
+            heapify(arr, n, largest);<br>
+        }<br>
+    }<br>
+
+    static void printArray(int arr[])<br>
+    {<br>
+        int n = arr.length;<br>
+        for (int i = 0; i < n; ++i)<br>
+            System.out.print(arr[i] + " ");<br>
+        System.out.println();<br>
+    }
+<br>
+    public static void main(String args[])<br>
+    {<br>
+        int arr[] = { 12, 11, 13, 5, 6, 7 };<br>
+        int n = arr.length;<br>
+ 
+        Task1 ob = new Task1();<br>
+        ob.buildHeap(arr);<br>
+ 
+        System.out.println("Sorted array is");<br>
+        printArray(arr);<br>
+    }<br>
+}<br>
+
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="javascript:void(0)">3 task
+                                                                <i class="pe-7s-angle-down"></i>
+                                                            </a>
+                                                            <ul class="frequently-body">
+                                                                <li>
+In Quick Sort we take a pivot(last component) from the exhibit and contrasts and all components from 0 to average of cluster and normal to end of the exhibit. Also, in the event that first component more prominent, next component, we're traded it.
+																
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="javascript:void(0)">4 task
+                                                                <i class="pe-7s-angle-down"></i>
+                                                            </a>
+                                                            <ul class="frequently-body">
+                                                                <li>
+O(nlogn)
+                                                                    
+																</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="javascript:void(0)">5 task
+                                                                <i class="pe-7s-angle-down"></i>
+                                                            </a>
+                                                            <ul class="frequently-body">
+                                                                <li>
+Better approach to arranging components with low time intricacy													
+                                                                   </li>
+                                                            </ul>
+                                                        </li>
+														<li class="has-sub">
+                                                            <a href="javascript:void(0)">6 task
+                                                                <i class="pe-7s-angle-down"></i>
+                                                            </a>
+                                                            <ul class="frequently-body">
+                                                                <li>
+Better approach to arranging components with low time intricacy													
+                                                                   </li>
+                                                            </ul>
+                                                        </li>
+														<li class="has-sub">
+                                                            <a href="javascript:void(0)">7 task
+                                                                <i class="pe-7s-angle-down"></i>
+                                                            </a>
+                                                            <ul class="frequently-body">
+                                                                <li>
+Mergesort utilizes additional room, quicksort requires little space and shows great store region. ... Region of reference : Quicksort specifically shows great reserve territory and this makes it quicker than consolidate sort as a rule like in virtual memory climate.											
+                                                                   </li>
+                                                            </ul>
+                                                        </li>
+														<li class="has-sub">
+                                                            <a href="javascript:void(0)">8 task
+                                                                <i class="pe-7s-angle-down"></i>
+                                                            </a>
+                                                            <ul class="frequently-body">
+                                                                <li>
+Partitions our cluster on 2 exhibits, first exhibit from begin to average and second from normal as far as possible. What's more, if first exhibit components more prominent than component to second cluster, it supplanted											
+                                                                   </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 pt-6 pt-md-0">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="frequently-item">
+                                                    <ul>
+                                                        <li class="has-sub active">
+                                                            <a href="javascript:void(0)">9 task
+                                                                <i class="pe-7s-angle-down"></i>
+                                                            </a>
+                                                            <ul class="frequently-body">
+                                                                <li>
+O(NlogN)
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="javascript:void(0)">10 task
+
+                                                                <i class="pe-7s-angle-down"></i>
+                                                            </a>
+                                                            <ul class="frequently-body">
+                                                                <li>
+Merge Sort is helpful for arranging connected records. Merge Sort is a steady sort which implies that a similar component in a cluster keep up their unique situations regarding one another. By and large time intricacy of Merge sort is O(nLogn). It is more proficient all things considered in most pessimistic scenario additionally the runtime is O(nlogn)
+                                                                   </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="javascript:void(0)">11 task
+                                                                <i class="pe-7s-angle-down"></i>
+                                                            </a>
+                                                            <ul class="frequently-body">
+                                                                <li>
+import java.util.Comparator;<br>
+
+public class QuickSortWithComparator {<br>
+	public void sort(Object[] x) {<br>
+		quicksort(x, 0, x.length - 1);<br>
+	}<br>
+	private void quicksort(Object[] x, int start, int end) {<br>
+		if(start < end) > <br>
+			int pi = partition(x, start, end);<br>
+			quicksort(x, start, pi - 1);<br>
+			quicksort(x, pi + 1, end);<br>
+		}<br>
+	}<br>
+	private int partition(Object[] x, int start, int end) {<br>
+		Object pivot = x[end];<br>
+		 <br>
+		int i = start - 1;<br>
+		for(int j = start; j <= end; j++) {> <br>
+			  if(((Comparable) x[j]).compareTo(pivot) > 0) {<br>
+				i++;<br>
+				Object temp = x[i];<br>
+				x[i] = x[j];<br>
+				x[j] = temp; <br>
+			  }
+				<br>
+			 
+		}<br>
+		Object temp = x[i+1];<br>
+		x[i+1] = x[end];<br>
+		x[end] = temp;<br>
+		return (i + 1);<br>
+	}<br>
+	
+	
+}<br>
+	
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="javascript:void(0)">12 task
+                                                                <i class="pe-7s-angle-down"></i>
+                                                            </a>
+                                                            <ul class="frequently-body">
+                                                                <li>
+public class UltraSort {<br>
+	
+	
+	public void mergeSort(Object[] arr) {<br>
+		sort(arr, 0, arr.length - 1);<br>
+		
+	}<br>
+	private static void sort(Object[] x, int start, int end) {<br>
+		if(start < end) {><br>
+			int middle = start + (end - start) / 2;<br>
+			sort(x, start, middle);<br>
+			sort(x, middle + 1, end);<br>
+		 	
+		   merge(x, start, end, middle);	<br>
+		}<br>
+	}<br>
+	public static void merge(Object[] x, int start, int end, int middle) {<br>
+		int n = middle - start + 1;<br>
+		int n1 = end - middle;<br>
+		Object[] a = new Object[n];<br>
+		Object[] b = new Object[n1];<br>
+
+	    for(int i = 0; i <= n - 1; i++) {><br>
+	    	 a[i] = x[start + i];<br>
+	    }
+
+	    
+	    for(int j = 0; j <= n1 - 1; j++) {><br>
+	    	b[j] = x[middle + j + 1];<br>
+	    }<br>
+	    
+	    
+	    int i = 0, j = 0;<br>
+	    
+	    int k = start;<br>
+	    
+	    while (i < n && j < n1) {><br>
+	    	if(((Comparable) a[j]).compareTo(b[i]) > 0) {<br>
+                x[k] = a[i];<br>
+                i++;<br>
+            }<br>
+            else {<br>
+                x[k] = b[j];<br>
+                j++;<br>
+            }<br>
+            k++;<br>
+        }<br>
+	    for(; i < n; i++) {><br>
+	    	x[k] = a[i];<br>
+	    	k++;<br>
+	    }<br>
+	    for(; j < n1; j++) {><br>
+	    	k++;<br>
+	    }<br>
+	    
+	}<br>
+}<br>
+
+	}<br>
+	 
+ }<br>
+
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="javascript:void(0)">13 task
+                                                                <i class="pe-7s-angle-down"></i>
+                                                            </a>
+                                                            <ul class="frequently-body">
+                                                                <li>
+import java.util.Scanner;<br>
+
+public class Task1 {<br>
+	public static void main(String[] args) {<br>
+		int[] arr = {10, 20, 80, 30, 60, 50, 110, 100, 130, 170};<br>
+	    int x = 110;<br>
+		
+		System.out.println(search(arr, x, arr.length)); <br>
+		int[] arr1 = {10, 20, 80, 30, 60, 50, 110, 100, 130, 170};<br>
+        int x1 = 175;<br>
+		System.out.println(search(arr1, x1, arr1.length)); <br>
+	}<br>
+	
+	public static boolean search(int[] array, int x, int n) {<br>
+		for(int i = 0; i < n; i++) {><br>
+			if(array[i] == x) {<br>
+				return true;<br>
+			}<br>
+		}<br>
+		 
+		return false;<br>
+	}<br>
+	 
+}
+	
+</li>
+                                                            </ul>
+                                                        </li>
+																												<li class="has-sub">
+                                                            <a href="javascript:void(0)">14 task
+                                                                <i class="pe-7s-angle-down"></i>
+                                                            </a>
+                                                            <ul class="frequently-body">
+                                                                <li>
+13 task, merged											
+                                                                   </li>
+                                                            </ul>
+                                                        </li>
+														<li class="has-sub">
+                                                            <a href="javascript:void(0)">15 task
+                                                                <i class="pe-7s-angle-down"></i>
+                                                            </a>
+                                                            <ul class="frequently-body">
+                                                                <li>
+public static boolean binarySearch(int[] array, int x, int n) {<br>
+		 int start = 0, end = n - 1;<br>
+		 
+		 while(start <= end) {><br>
+			 int mid = (start + end) / 2;<br>
+			 
+			 if(array[mid] > x) {<br>
+				 end = mid - 1;<br>
+			 } else if(array[mid] < x) {<br>
+				 start = mid + 1;<br>
+			 } else {<br>
+				 return true;<br>
+			 }<br>
+			 
+		 }<br>
+		 return false;<br>
+											
+                                                                   </li>
+                                                            </ul>
+                                                        </li>
+														<li class="has-sub">
+                                                            <a href="javascript:void(0)">16 task
+                                                                <i class="pe-7s-angle-down"></i>
+                                                            </a>
+                                                            <ul class="frequently-body">
+                                                                <li>
+import java.util.Scanner;<br>
+
+
+public class Task1 {<br>
+	public static void main(String[] args) {<br>
+		System.out.println("Введите n и x, затем внесите числа в массив");<br>
+		Scanner scanner = new Scanner(System.in);<br>
+		int n = scanner.nextInt();<br>
+		int x = scanner.nextInt();<br>
+		int[] arr = new int[n];<br>
+		for(int i = 0; i < n; i++) {><br>
+			arr[i] = scanner.nextInt();<br>
+		}<br>
+		System.out.println(checkSum(arr, x, arr.length));<br> 
+		
+	}<br>
+	
+	 public static boolean checkSum(int[] array, int x, int n) { <br>
+		 for(int i = 0; i < n - 1; i++) {> <br>
+			 for(int j = i+1; j < n; j++) {> <br>
+				 if(array[i] + array[j] == x) {<br>
+					 System.out.println(array[i] + " " + array[j]);<br>
+					 return true;<br>
+				 } <br>
+			 }<br>
+		}<br>
+		 return false;<br>
+		 
+		 
+	 }
+}
+												
+                                                                   </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+       
+
+    </div>
+
+
+
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/plugins/wow.min.js"></script>
+    <script src="assets/js/plugins/ion.rangeSlider.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
